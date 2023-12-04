@@ -10,7 +10,6 @@ const fetchProductDetails = async (productId) => {
   }
 };
 
-export { fetchProductDetails };
 
 const fetchProductIds = async () => {
   try {
@@ -22,4 +21,4 @@ const fetchProductIds = async () => {
   }
 };
 
-export default fetchProductIds;
+export { fetchProductDetails, fetchProductIds };

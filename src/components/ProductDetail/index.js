@@ -1,7 +1,7 @@
 // components/ProductDetail.js
 import React from "react";
 
-const ProductDetail = ({ product }) => {
+export const ProductDetail = ({ product }) => {
   if (!product) {
     return <div>Loading...</div>;
   }
@@ -15,4 +15,3 @@ const ProductDetail = ({ product }) => {
   );
 };
 
-export default ProductDetail;

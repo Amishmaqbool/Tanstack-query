@@ -15,15 +15,15 @@ const ProductDetailPage = ({ product }) => {
   return <ProductDetail product={product} />;
 };
 
-export async function getStaticPaths() {
-  const productIds = await fetchProductIds();
+// export async function getStaticPaths() {
+//   const productIds = await fetchProductIds();
 
-  const paths = productIds.map((productId) => ({
-    params: { productId: productId.toString() },
-  }));
+//   const paths = productIds.map((productId) => ({
+//     params: { productId: productId.toString() },
+//   }));
 
-  return { paths, fallback: true };
-}
+//   return { paths, fallback: true };
+// }
 
 export async function getStaticProps({ params }) {
   const queryClient = new QueryClient();
