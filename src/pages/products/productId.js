@@ -25,20 +25,20 @@ const ProductDetailPage = ({ product }) => {
 //   return { paths, fallback: true };
 // }
 
-export async function getStaticProps({ params }) {
-  const queryClient = new QueryClient();
+// export async function getStaticProps({ params }) {
+//   const queryClient = new QueryClient();
 
-  await queryClient.prefetchQuery({
-    queryKey: ["productDetails", params.productId],
-    queryFn: () => fetchProductDetails(params.productId),
-  });
+//   await queryClient.prefetchQuery({
+//     queryKey: ["productDetails", params.productId],
+//     queryFn: () => fetchProductDetails(params.productId),
+//   });
 
-  return {
-    props: {
-      product: queryClient.getQueryData(["productDetails", params.productId]),
-      dehydratedState: dehydrate(queryClient),
-    },
-  };
-}
+//   return {
+//     props: {
+//       product: queryClient.getQueryData(["productDetails", params.productId]),
+//       dehydratedState: dehydrate(queryClient),
+//     },
+//   };
+// }
 
 export default ProductDetailPage;
