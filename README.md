@@ -72,7 +72,7 @@ The application dynamically renders products based on selected categories. The u
 Dynamic routing is implemented for individual product details using Next.js's Link component. Users can navigate to detailed views by clicking on corresponding buttons, providing an intuitive and user-friendly interface. This feature isn't completely implemented yet it has a bug which needs to be fixed in v2.0
 
 # Server-Side Rendering (SSR) for Initial Data Fetching
-The application uses Next.js's getStaticProps to perform server-side rendering (SSR) during the initial load. This ensures that essential data, including both products and categories, is pre-fetched before rendering the page on the server side.
+The application uses Next.js's getStaticProps to perform server-side rendering (SSR) during the initial load. This ensures that essential data, including both products and categories, is pre-fetched before rendering the page on the server side. And used "dehydrate" prop for the next ssr prefetching.
 
 # Clear and Concise Documentation
 The project includes a comprehensive README file documenting the implementation details, project structure, and instructions for integration. This documentation serves as a valuable resource for developers, facilitating collaboration and future maintenance.
